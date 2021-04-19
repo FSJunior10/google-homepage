@@ -16,28 +16,55 @@ a {
     
 }
 
+#Search-bar {
+    background-color: white;
+    width: 400px;
+    height:40px;
+    border-radius: 30px 30px 30px 30px;
+    padding-left: 10px;
+    border-style: solid;
+    border-width: 1px;
+    color: rgba(128, 128, 128, 0.404);
+    margin-left: 36%;
+    position: relative;
+}
+
+
 header {
     
 }
 
 footer {
-    background-color: rgba(128, 128, 128, 0.404);
+    background-color: rgba(128, 128, 128, 0.13);
     height: 50px;
     clear: both;
     position: relative;
-    margin-bottom: -100px;
+    margin-top: 335px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.082);
     
 }
 
 #sign-in {
-    padding: 0px 0px 0px 10px;
+    margin: 20px 30px 0px 0px;
+    background-color: rgb(66, 133, 244);
+    width: 70px;  
+    height: 30px;
+    border: 1px;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color:rgb(66, 133, 244);
+    color: white;
     
 }
 #images {
-    padding: 0px 0px 0px 10px;
+    margin: 20px 30px 0px 0px;
+    font-size: 15;
 }
 #gmail {
-
+    margin: 20px 30px 0px 0px;
+    font-size: 15;
 }
 #store {
     padding: 0px 0px 0px 10px;
@@ -47,10 +74,12 @@ footer {
 }
 #advertising {
     padding-left: 5px;
+    margin-top: 15px;
     
 }
 #business {
     padding-left: 10px;
+    
     
 }
 #how-search-works {
@@ -59,6 +88,9 @@ footer {
 }
 #privacy {
     margin-top: 15px;
+}
+#privacy:hover {
+    text-decoration: underline;
 }
 #terms {
     padding-left: 10px;
@@ -81,20 +113,44 @@ body {
 img {
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 18%;
+    margin-bottom: 10px;
     display: block;
 }
+#lucky {
+    width: 140px;
+    height: 40px;
+    background-color:rgba(128, 128, 128, 0.13);
+    color:rgba(0, 0, 0, 0.63);
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14;
+    font: 
+}
+#search {
+    width: 140px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.13);
+    color: rgba(0, 0, 0, 0.63);
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14;
+}
+.top-links {
+    color: blue;
+}
+
 </style>
 
 <body>
+    <head>
+        <link rel="stylesheet" type="text/CSS" href="style.css">
+    </head>
     <main>
         <header>
             <ul>
-                <li id="about"><a href="">About</a></li>
-                <li id="store"><a href="">Store</a></li>
-                <li  id="sign-in" style="float:right"><a href="">Sign In</a></li>
-                <li id="images"style="float:right"><a href="">Images</a></li>
+                <li  id="about"><a href="">About</a></li>
+                <li  id="store"><a href="">Store</a></li>
+                <li id="sign-in" style="position: relative; float:right"><a href="">Sign In</a></li>
+                <li  id="images"style="float:right"><a href="">Images</a></li>
                 <li id="gmail"style="float:right"><a href="">Gmail</a></li>
             </ul>
         </header>
@@ -106,14 +162,14 @@ img {
             <form>
                 <input type="text" id="Search-bar" value="What are you looking for?">
                 <label for="Search-bar" ></label>
-                <input type="submit" value=" Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
+                <input id="search" type="submit" style="position:relative; top: 50px; right: 355px;" value="Google Search">
+                <input id="lucky" type="submit" style="position:relative; top: 50px; right: 340px;" value="I'm Feeling Lucky">
             </form>
         </div>
         <div class="foot-bottom">
             <footer>
                 <ul>
-                    <li id="advertising"><a href="">Advertising</a></li>
+                    <li id="advertising" style="float:left"><a href="">Advertising</a></li>
                     <li id="business"><a href="">Business</a></li>
                     <li id="how-search-works"><a href="">How Search Works</a></li>
                     <li id="settings" style="float:right"><a href="">Settings</a></li>
